@@ -9,6 +9,16 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+
+/*
+ * Classe non redefinissable TaskList
+ * Elle implements Runnable
+ * @param static final String QUIT
+ * @param final Map<String, List<Task>> tasks
+ * @param final BufferedReader in
+ * @param final PrintWriter out
+ * @param long lastId
+ */
 public final class TaskList implements Runnable {
     private static final String QUIT = "quit";
 
@@ -18,12 +28,21 @@ public final class TaskList implements Runnable {
 
     private long lastId = 0;
 
+    /*
+     * le Main
+     * BufferedReader est une sorte de scanner
+     */
     public static void main(String[] args) throws Exception {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(System.out);
         new TaskList(in, out).run();
     }
 
+    /*
+     * Constructeur de TaskList
+     * @param BufferedReader reader
+     * @param PrintWriter writer
+     */
     public TaskList(BufferedReader reader, PrintWriter writer) {
         this.in = reader;
         this.out = writer;
