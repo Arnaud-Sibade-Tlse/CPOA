@@ -48,6 +48,12 @@ public final class TaskList implements Runnable {
         this.out = writer;
     }
 
+    
+    /*
+     * Le run
+     * boucle infini lisant les command
+     * Ce quit avec lentrer de la commande QUIT 
+     */
     public void run() {
         while (true) {
             out.print("> ");
