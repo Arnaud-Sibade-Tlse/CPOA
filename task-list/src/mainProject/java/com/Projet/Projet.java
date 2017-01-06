@@ -7,6 +7,10 @@ public class Projet {
 	public String nom;
 	public ArrayList<typeTask>listTask=new ArrayList<typeTask>();
 	
+	public Projet(){
+		this.nom="";
+	}
+	
 	public Projet(String nom){
 		this.nom=nom;
 	}
@@ -25,11 +29,13 @@ public class Projet {
 	
 	public String afficher(){
 		String mesTaches = getNom();
-		mesTaches += "\n";
-		for(int i = 0; i < listTask.size();i++){
-			mesTaches+="	"+listTask.get(i).toString()+"\n";
+		if(mesTaches!=""){
+			mesTaches += "\n";
+			for(int i = 0; i < listTask.size();i++){
+				mesTaches+="	"+listTask.get(i).toString()+"\n";
+			}
+			mesTaches+="\n";
 		}
-		mesTaches+="\n";
 		return mesTaches;
 	}
 }
