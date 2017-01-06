@@ -24,7 +24,6 @@ public class Projet {
 	}
 	
 	public String afficher(){
-		//TODO
 		String mesTaches = getNom();
 		mesTaches += "\n";
 		for(int i = 0; i < listTask.size();i++){
