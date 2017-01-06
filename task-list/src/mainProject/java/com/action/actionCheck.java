@@ -16,6 +16,7 @@ public class actionCheck implements action {
 	public void execute() throws Exception {
 	     Scanner sc = new Scanner(System.in);
 	     System.out.println("saisir l'ID de la tache a valider :");
+	     long id = sc.nextLong();
 	     
 	}
 

@@ -1,5 +1,7 @@
 package com.action;
 
+import java.util.Scanner;
+
 import com.Task.typeTask;
 
 public class actionUnCheck implements action{
@@ -12,6 +14,9 @@ public class actionUnCheck implements action{
 
 	@Override
 	public void execute() throws Exception {
+	     Scanner sc = new Scanner(System.in);
+	     System.out.println("saisir l'ID de la tache a valider :");
+	     long id = sc.nextLong();
 	}
 
 }
