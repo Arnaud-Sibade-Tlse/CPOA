@@ -1,10 +1,9 @@
 package com.action;
-//import taskList;
-
+//import 
 
 public interface action {
 
 	public String actionMessage();
 	
-	//public void execte(taskList tL) throws Exception;
+	//public void execute(typeTask tL) throws Exception;
 }
