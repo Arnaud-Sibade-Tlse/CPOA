@@ -25,6 +25,12 @@ public class Projet {
 	
 	public String afficher(){
 		//TODO
-		return "";
+		String mesTaches = getNom();
+		mesTaches += "\n";
+		for(int i = 0; i < listTask.size();i++){
+			mesTaches+="	"+listTask.get(i).toString()+"\n";
+		}
+		mesTaches+="\n";
+		return mesTaches;
 	}
 }

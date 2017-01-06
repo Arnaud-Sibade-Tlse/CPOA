@@ -50,6 +50,15 @@ public abstract class typeTask {
     public void getSousTache(){
     	//TODO
     }
+    
+    public String toString(){
+    	String maTache = "";
+    	maTache+="[";
+    	if(done==true){ maTache += "x"; }
+    	else { maTache += " ";}
+    	maTache+="] "+getId()+" : "+getDescription();
+    	return maTache;
+    }
 }
 	
 	
