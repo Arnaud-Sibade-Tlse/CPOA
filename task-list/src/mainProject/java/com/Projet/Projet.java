@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import com.Task.typeTask;
 
 public class Projet {
-	String nom;
-	ArrayList<typeTask>listTask=new ArrayList<typeTask>();
+	public String nom;
+	public ArrayList<typeTask>listTask=new ArrayList<typeTask>();
 	
 	public Projet(String nom){
 		this.nom=nom;

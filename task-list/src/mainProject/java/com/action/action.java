@@ -3,9 +3,9 @@ package com.action;
 
 import com.Task.typeTask;
 
-public interface action {
+public interface action <E> {
 
 	public String actionMessage();
 	
-	public void execute(typeTask tL) throws Exception;
+	public void execute() throws Exception;
 }

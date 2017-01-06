@@ -11,8 +11,7 @@ public class actionUnCheck implements action{
 	}
 
 	@Override
-	public void execute(typeTask tL) throws Exception {
-		tL.setDone(false);
+	public void execute() throws Exception {
 	}
 
 }

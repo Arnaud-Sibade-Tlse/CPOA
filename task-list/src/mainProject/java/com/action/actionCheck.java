@@ -11,8 +11,7 @@ public class actionCheck implements action {
 	}
 
 	@Override
-	public void execute(typeTask tL) throws Exception {
-		tL.setDone(true);
+	public void execute() throws Exception {
 	}
 
 }
