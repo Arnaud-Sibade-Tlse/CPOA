@@ -1,5 +1,7 @@
 package com.action;
 
+import com.Task.typeTask;
+
 public class actionAddTask implements action{
 
 	@Override

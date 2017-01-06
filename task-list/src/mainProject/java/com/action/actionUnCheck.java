@@ -1,5 +1,7 @@
 package com.action;
 
+import com.Task.typeTask;
+
 public class actionUnCheck implements action{
 
 	@Override
@@ -10,8 +12,7 @@ public class actionUnCheck implements action{
 
 	@Override
 	public void execute(typeTask tL) throws Exception {
-		// TODO Auto-generated method stub
-		
+		tL.setDone(false);
 	}
 
 }

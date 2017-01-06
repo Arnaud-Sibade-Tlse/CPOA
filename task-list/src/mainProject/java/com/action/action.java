@@ -1,6 +1,8 @@
 package com.action;
 //import 
 
+import com.Task.typeTask;
+
 public interface action {
 
 	public String actionMessage();
