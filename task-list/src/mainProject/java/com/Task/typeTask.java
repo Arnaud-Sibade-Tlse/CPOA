@@ -47,8 +47,9 @@ public abstract class typeTask {
     /*
      * Retourne la liste des sous taches
      */
-    public void getSousTache(){
+    public typeTask getSousTache(){
     	//TODO
+    	return null;
     }
     
     public String toString(){
