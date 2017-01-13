@@ -25,7 +25,11 @@ public class Projet {
 	}
 	
 	public void addTask(typeTask nTask){
-		listTask.add(nTask);
+		if(this.getNom()==""){
+			System.out.println("Impossible d'ajouter des tache a un prjet sans nom ! \nVeuillez nommer votre projet");
+		} else {
+			listTask.add(nTask);
+		}
 	}
 	
 	public String afficher(){

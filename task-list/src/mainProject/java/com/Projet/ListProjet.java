@@ -17,7 +17,11 @@ public class ListProjet {
 	public String toString(){
 		String maList = "";
 		for(int i = 0; i<listProjet.size();i++){
-			maList = listProjet.get(i).afficher()+"\n";
+			if (listProjet.get(i).getNom()==""){
+				
+			} else {
+				maList = listProjet.get(i).afficher()+"\n";
+			}
 		}
 		return maList;
 	}
