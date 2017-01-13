@@ -15,6 +15,7 @@ public class Projet {
 		this.nom=nom;
 	}
 	
+	
 	public String getNom(){
 		return nom;
 	}
