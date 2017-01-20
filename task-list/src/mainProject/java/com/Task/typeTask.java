@@ -6,7 +6,7 @@ public abstract class typeTask {
 	protected long id;
 	protected String description;
 	boolean done;
-	ArrayList<typeTask> sousTache = new ArrayList<typeTask>();
+	ArrayList<typeTask> sousTaches = new ArrayList<typeTask>();
    
     /*
      * Retourne l'id de la task
@@ -38,14 +38,7 @@ public abstract class typeTask {
     }
     
     
-    public String toString(){
-    	String maTache = "";
-    	maTache+="[";
-    	if(done==true){ maTache += "x"; }
-    	else { maTache += " ";}
-    	maTache+="] "+getId()+" : "+getDescription();
-    	return maTache;
-    }
+
 }
 	
 	

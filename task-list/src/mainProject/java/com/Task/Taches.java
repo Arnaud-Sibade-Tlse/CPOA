@@ -13,6 +13,22 @@ public class Taches extends typeTask{
 		this.id=id;
 		this.description=desc;
 	}
+	
+	 /*
+     * Retourne l'id de la task
+     */
+    public long getSubId() {
+        return id;
+    }
+
+    
+    /*
+     * Retourne la description de la task
+     */
+    public String getSubDescription() {
+        return description;
+    }
+    
 
     /** Ajoute un produit à la liste des composants
      * @param produit le produit que l'on veux ajouter au composite
@@ -49,14 +65,19 @@ public class Taches extends typeTask{
         }
     }
 
-
    
    public String toString(){
    	String maTache = "";
    	maTache+="[";
-   	if(done==true){ maTache += "x"; }
-   	else { maTache += " ";}
-   	maTache+="] "+getId()+" : "+getDescription();
+	if(done==true){ maTache += "x"; }
+	else { maTache += " ";}
+	maTache+="] "+getId()+" : "+getDescription();
+   	for(int i=0;i<sousTache.size();i++){
+   		maTache+="\n		[";
+   	   	if(done==true){ maTache += "x"; }
+   	   	else { maTache += " ";}
+   	   	maTache+="] "+sousTache.get(i).getSubId()+" : "+sousTache.get(i).getSubDescription();
+   	}
    	return maTache;
    }
 
