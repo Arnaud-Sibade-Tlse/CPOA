@@ -14,6 +14,7 @@ public abstract class typeTask {
     public long getId() {
         return id;
     }
+
     
     /*
      * Retourne la description de la task
@@ -36,21 +37,6 @@ public abstract class typeTask {
         this.done = done;
     }
     
-    /*
-     * permet dajouter une sous tache a une tache
-     * 
-     */
-    public void addSousTache(){
-    	//TODO
-    }
-    
-    /*
-     * Retourne la liste des sous taches
-     */
-    public ArrayList<typeTask> getSousTache(){
-    	//TODO
-    	return sousTache;
-    }
     
     public String toString(){
     	String maTache = "";

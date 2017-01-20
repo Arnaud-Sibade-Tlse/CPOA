@@ -4,14 +4,29 @@ import java.util.ArrayList;
 
 
 public class ListProjet {
-	public ArrayList<Projet>listProjet=new ArrayList<Projet>();
+	public ArrayList<Projet>listProjet;
 	
-	public void addProject(Projet project){
+	public ListProjet(){
+		this.listProjet = new ArrayList<Projet>();
+	}
+	
+	public  void addProject(Projet project){
 		listProjet.add(project);
 	}
 	
-	public Projet getProjet(int index){
+	public  Projet getProjet(int index){
 		return listProjet.get(index);
+	}
+	
+	public  Projet getProjet(String name){
+		 Projet monPr;
+		 for (int i=0; i < listProjet.size() ; i++){
+		  monPr = listProjet.get(i);
+		  if(monPr.getNom().equals(name)){
+		   return monPr;
+		  }
+		 }
+		 return null;	 
 	}
 	
 	public String toString(){
@@ -20,7 +35,7 @@ public class ListProjet {
 			if (listProjet.get(i).getNom()==""){
 				
 			} else {
-				maList = listProjet.get(i).afficher()+"\n";
+				maList += listProjet.get(i).afficher()+"\n";
 			}
 		}
 		return maList;

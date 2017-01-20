@@ -1,6 +1,9 @@
 package com.action;
 
+import com.Projet.ListProjet;
 import com.Task.typeTask;
+
+import defaut.main;
 
 public class actionShow implements action{
 
@@ -12,7 +15,7 @@ public class actionShow implements action{
 
 	@Override
 	public void execute() throws Exception {
-		
+		System.out.println(main.liste.toString());
 	}
 
 }
